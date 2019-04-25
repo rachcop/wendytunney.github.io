@@ -1,7 +1,31 @@
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
     font-family: 'Antic Didone', serif;
 }
 
 p, li {
-    font-family: 'Yantramanav', sans-serif;
+    font-family: 'Hind Siliguri Light', sans-serif;
+    font-weight: 300;
 }
+
+header {
+    display: flex;
+}
+
+
+
+@media (min-width: 640px){
+
+}
+
+@media (min-width: 768px){
+
+}
+
+@media (min-width: 1024px){
+
+}
+
+@media (min-width: 1200px){
+
+}
+
