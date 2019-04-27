@@ -1,31 +1,250 @@
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Antic Didone', serif;
 }
 
-p, li {
+a {
+    text-decoration: none;
+}
+
+#home-main {
+    padding: 0 6rem 0 6rem;
+}
+
+h1 {
+    color: #378289;
+    font-weight: lighter;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2 {
+    color: #545454;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: lighter;
+    letter-spacing: 0.08em;
+}
+
+p, ul, li {
     font-family: 'Hind Siliguri Light', sans-serif;
     font-weight: 300;
+    color: #323232;
 }
+
+/* Header styling */
 
 header {
     display: flex;
+    border-bottom: 7px solid #378289;
+    background-image: url('../images/sunflower.jpg');
+    background-repeat: no-repeat;
+    background-size: 45%;
+}
+
+/* TODO: Look into if this is needed (Added for potential accessibility concerns) */
+.header-image {
+    display: none;
+}
+
+#header-text {
+    padding-left: 30em;
+    margin-top: 1.5em;
+}
+
+.header-nav {
+    list-style-type: none;
+    display: flex;
+    margin-top: 3em;
+    margin-left: 5em;
+    padding-bottom: 3em;
+}
+
+
+.header-nav li {
+    margin-right: 4em;
+    font-size: 1.25em;
+}
+
+.contact-nav-link {
+    border-left: 1px solid #545454;
+    padding-left: 4em;
+}
+
+.header-nav li, 
+.contact-nav-link a {
+    color: #378289;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0.50em 0 0.75em 0;
+    background-color: #378289;
+    border-radius: 2px;
+}
+
+.dropdown-content a {
+    font-size: 0.75em;
+    line-height: 2em;
+    color: #fff;
+    margin-left: 1em;
+}
+
+.dropdown-content li:hover {
+    background-color: #fff;
+    width: 100%;
+}
+
+.dropdown-content a:hover {
+    color: #378289;
+}
+
+.dropdown-content a:active {
+    color: #faef00;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Footer styling */
+
+footer {
+    background-color: rgba(55, 130, 137, 0.5);
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* Home page styling */
+
+h3 {
+    font-weight: lighter;
+    font-size: 1.75em;
+}
+
+h3 strong {
+    color: #378289;
+}
+
+#home-intro { 
+    display: flex;
+}
+
+#home-intro-text p { 
+    width: 85%;
+    font-size: 1.10rem;
+}
+
+#home-intro img {
+    height: 40%;
+    width: 40%;
+    margin-top: 1.5rem;
+}
+
+#about-me {
+    display: flex;
+    margin-top: 2rem;
+}
+
+#about-me img {
+    height: 25%;
+    width: 25%;
+    margin-top: 0.5rem;
+}
+
+#about-me-text p {
+    width: 85%;
+    font-size: 1.10rem;
+}
+
+#about-me-text h3 {
+    font-size: 2rem;
+    color: #378289;
+    margin-top: 0.80rem;
+}
+
+#about-me-text h3,
+#about-me-text p {
+    margin-left: 4rem;
+}
+
+#home-contact {
+    display: flex;
+    align-items: center;
+}
+
+.ready {
+    font-size: 1.5rem;
+    width: 55%;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#button a{
+    border: 1.5px solid;
+    border-top-color: #378289;
+    border-left-color: #378289;
+    border-bottom-color: #faef00;
+    border-right-color: #faef00;
+    padding: 1rem;
+    text-decoration: none;
+    color: #378289;
+    font-weight: 500;
+    font-size: 1.15rem;
+    text-align: center;
 }
 
 
 
-@media (min-width: 640px){
+/* Services page styling */
+
+
+/* Contact page styling */
+
+
+@media (min-width: 640px) {
+    
+    /* Home page styling */
+
+    h3 {
+        font-weight: lighter;
+        font-size: 1.25em;
+    }
+}
+
+@media (min-width: 768px) {
 
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px) {
 
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1200px) {
 
-}
+    /* Home page styling */
 
-@media (min-width: 1200px){
-
+    h3 {
+        font-weight: lighter;
+        font-size: 1.75em;
+    }
 }
 
