@@ -12,23 +12,19 @@ a {
     text-decoration: none;
 }
 
-#home-main {
-    padding: 0 6rem 0 6rem;
-}
-
 h1 {
     color: #378289;
     font-weight: lighter;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     text-align: center;
 }
 
 h2 {
     color: #545454;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: lighter;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.08rem;
 }
 
 p, ul, li {
@@ -53,31 +49,37 @@ header {
 }
 
 #header-text {
-    padding-left: 30em;
-    margin-top: 1.5em;
+    padding-left: 30rem;
+    margin-top: 1.5rem;
 }
 
 .header-nav {
     list-style-type: none;
     display: flex;
-    margin-top: 3em;
-    margin-left: 5em;
-    padding-bottom: 3em;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    padding-bottom: 3rem;
 }
 
-
 .header-nav li {
-    margin-right: 4em;
-    font-size: 1.25em;
+    margin-right: 4rem;
+    font-size: 1.25rem;
 }
 
 .contact-nav-link {
     border-left: 1px solid #545454;
-    padding-left: 4em;
+    padding-left: 4rem;
+}
+
+.home-nav-link {
+    border-right: 1px solid #545454;
+    padding-right: 4rem;
 }
 
 .header-nav li, 
-.contact-nav-link a {
+.header-nav li a,
+.contact-nav-link a,
+.home-nav-link a {
     color: #378289;
 }
 
@@ -96,16 +98,16 @@ header {
 
 .dropdown-content ul {
     list-style-type: none;
-    padding: 0.50em 0 0.75em 0;
-    background-color: #378289;
+    padding: 0.50rem 0 0.75em 0;
+    background-color: #f1f1f1;
     border-radius: 2px;
 }
 
-.dropdown-content a {
-    font-size: 0.75em;
-    line-height: 2em;
-    color: #fff;
-    margin-left: 1em;
+.dropdown-content li a {
+    font-size: 1.05rem;
+    line-height: 2rem;
+    color: #323232;
+    margin-left: 1rem;
 }
 
 .dropdown-content li:hover {
@@ -129,11 +131,67 @@ header {
 
 footer {
     background-color: rgba(55, 130, 137, 0.5);
-    padding-bottom: 0;
-    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
+#footer-nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 2.65rem;
+    margin-bottom: 2rem;
+}
+
+#footer-nav li {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#footer-nav li:nth-child(1),
+#footer-nav li:nth-child(2) {
+    border-right: 1px solid #545454;
+}
+
+#footer-nav li a {
+    color: #323232;
+}
+
+#footer-nav li a:hover {
+    color: #faef00;
+}
+
+#footer-nav li a:active {
+    color: #545454;
+}
+
+#footer-nav li.breadcrumbs a {
+    color: #faef00;
+}
+
+footer h5 {
+    font-size: 1.15rem;
+    text-align: center;
+    line-height: 1.50rem;
+    font-weight: lighter;
+    color: #323232;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
 /* Home page styling */
+
+#home-main {
+    padding: 0 6rem 3rem 6rem;
+}
+
+#home-main h3 {
+    margin-top: 1.5em;
+    color: #323232;
+}
 
 h3 {
     font-weight: lighter;
@@ -149,7 +207,7 @@ h3 strong {
 }
 
 #home-intro-text p { 
-    width: 85%;
+    width: 90%;
     font-size: 1.10rem;
 }
 
@@ -189,45 +247,174 @@ h3 strong {
 #home-contact {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 .ready {
     font-size: 1.5rem;
-    width: 55%;
+    width: 35%;
     text-align: center;
     font-weight: lighter;
+    color: #545454;
+    padding-right: 2rem;
 }
 
-#button a{
+#button {
+    padding-left: 2rem;
+}
+
+#button a {
     border: 1.5px solid;
     border-top-color: #378289;
     border-left-color: #378289;
     border-bottom-color: #faef00;
     border-right-color: #faef00;
-    padding: 1rem;
+    padding: 1.15em;
     text-decoration: none;
     color: #378289;
     font-weight: 500;
-    font-size: 1.15rem;
+    font-size: 1.15em;
     text-align: center;
+}
+
+#button a:hover {
+    background-color: rgba(55, 130, 137, 0.75);
+    color: #fff;
+    border-top-color: #faef00;
+    border-left-color: #faef00;
+}
+
+/* Services page styling */
+
+#services-main {
+    padding: 0 6rem 3rem 6rem;
+}
+
+#services-main h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #378289;
+    font-size: 2rem;
 }
 
 
 
-/* Services page styling */
 
 
 /* Contact page styling */
 
+#contact-main {
+    padding: 0 12rem 3rem 12rem;
+}
+
+#contact-main h3 {
+    margin-top: 2.65rem;
+    color: #378289;
+    font-size: 2rem;
+}
+
+form label {
+    font-family: 'Antic Didone', serif;
+    font-size: 1.15rem;
+}
+
+#contact-main {
+    display: flex;
+    justify-content: center;
+}
+
+#contact-intro-text p {
+    width: 80%;
+    font-size: 1.25rem;
+}
+
+#contact-section-2 {
+    margin-top: 2.5rem;
+}
+
+#image-quote {
+    background-image: url('../images/india-hike.JPG');
+    background-repeat: no-repeat;
+    height: 320px;
+    width: 320px;
+}
+
+.image-quote-text {
+    padding: 6rem 0 0 1.5rem;
+    font-size: 1.5rem;
+}
+
+.image-quote-text p {
+    font-family: 'Antic Didone', serif;
+}
+
+.quote {
+    color: #545454;
+    margin-bottom: 0.75rem;
+    line-height: 2.25rem;
+}
+
+.author {
+    color: #fff;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#booking-sessions h4 {
+    font-family: 'Hind Siliguri Light', sans-serif;
+    font-weight: 500;
+    color: #378289;
+    font-size: 1.25rem; 
+    margin-bottom: 1rem;
+}
+
+#booking-sessions p {
+    color: #545454;
+    padding: 0;
+    margin: 0.45rem 0 0 0;
+}
+
+.smaller {
+    font-size: 0.80rem;
+}
+
+#booking-sessions strong {
+    color: #323232;
+    font-weight: 500;
+}
+
+.details {
+    margin-top: 1.5rem;
+}
+
+#contact-form textarea {
+    min-width: 250px;
+    max-width: 400px;
+    min-height: 150px;
+    max-height: 225px;
+}
+
+#contact-form p {
+    line-height: 1.5rem;
+}
+
+#contact-form .message {
+    line-height: 2.5rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.contact-smaller {
+    font-size: 0.75rem;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
 
 @media (min-width: 640px) {
-    
-    /* Home page styling */
 
-    h3 {
-        font-weight: lighter;
-        font-size: 1.25em;
-    }
 }
 
 @media (min-width: 768px) {
@@ -240,11 +427,6 @@ h3 strong {
 
 @media (min-width: 1200px) {
 
-    /* Home page styling */
 
-    h3 {
-        font-weight: lighter;
-        font-size: 1.75em;
-    }
 }
 

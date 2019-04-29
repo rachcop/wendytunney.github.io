@@ -7,26 +7,26 @@
     <meta name="author" content="Rachel Coppens">
     <title>Services | Wendy Tunney</title>
     <link href="https://fonts.googleapis.com/css?family=Antic+Didone|Hind+Siliguri:300,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
     <header>
         <div id="header-image">
-            <img class="header-image" src="images/rsz_sunflower.jpg" title="Photo of sunflower" alt="sunflower">
+            <img class="header-image" src="images/sunflower.jpg" title="Photo of sunflower" alt="sunflower">
         </div><!--/#header-image-->    
-        
         <div id="header-text">
             <h1>Wendy Tunney</h1>
-            <h2>Integrative Holistic Health Coach &amp; Reiki Practitioner</h2>
-            <nav>
-                <ul class="header-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                </ul>
-            </nav>
+            <h2>Integrative Holistic Health Coach &amp;<br> Reiki Practitioner</h2>
+                <nav>
+                    <ul class="header-nav">
+                        <li class="home-nav-link"><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                    </ul>
+                </nav>
         </div><!--/#header-text-->
     </header>
-    <main>
+    <main id="services-main">
         <h3>Services</h3>
         <div id="service-tabs">
 
@@ -155,14 +155,16 @@
 
     </main>
     <footer>
-        <h4>Wendy Tunney&ensp; |&ensp; 416-804-7304 <br> wendytunney@outlook.com</h4>
+        <h5>Wendy Tunney&ensp; |&ensp; 416-804-7304 <br> wendytunney@outlook.com</h5>
         <div id="footer-nav">
             <ul>
                 <li><a href="index.html" title="Home page">Home</a></li>
-                <li><a href="services.html" title="Services page">Services</a></li>
+                <li class="breadcrumbs"><a href="services.html" title="Services page">Services</a></li>
                 <li><a href="contact.php" title="Contact page">Contact</a></li>
             </ul>
-        </div><!--/#footer-nav-->
+        </div><!--/#footer-nav & /.services-footer-nav-->
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

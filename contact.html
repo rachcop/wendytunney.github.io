@@ -12,66 +12,77 @@
 <body>
     <header>
         <div id="header-image">
-            <img class="header-image" src="images/rsz_sunflower.jpg" title="Photo of sunflower" alt="sunflower">
+            <img class="header-image" src="images/sunflower.jpg" title="Photo of sunflower" alt="sunflower">
         </div><!--/#header-image-->    
-                
         <div id="header-text">
             <h1>Wendy Tunney</h1>
-            <h2>Integrative Holistic Health Coach &amp; Reiki Practitioner</h2>
-            <nav>
-                <ul class="header-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="dropbtn">Services</li>
-                        <div class="dropdown-content">
-                            <ul>
-                                <li><a href="services.html#coaching">Coaching Overview</a></li>
-                                <li><a href="services.html#discovery">Discovery Sessions</a></li>
-                                <li><a href="services.html#sixty">60-minute Sessions</a></li>
-                                <li><a href="services.html#packages">Packages</a></li>
-                            </ul>
-                        </div><!--/.dropdown-content-->
-                </ul>
-            </nav>
+            <h2>Integrative Holistic Health Coach &amp;<br> Reiki Practitioner</h2>
+                <nav>
+                    <ul class="header-nav">
+                        <li class="home-nav-link"><a href="index.html">Home</a></li>
+                        <div class="dropdown">
+                            <li class="dropbtn"><a href="services.html">Services</a>
+                                <div class="dropdown-content">
+                                    <ul>
+                                        <li><a href="services.html#coaching">Coaching Overview</a></li>
+                                        <li><a href="services.html#discovery">Discovery Sessions</a></li>
+                                        <li><a href="services.html#sixty">60-minute Sessions</a></li>
+                                        <li><a href="services.html#packages">Packages</a></li>
+                                    </ul>
+                                </div><!--/.dropdown-content-->
+                            </li>
+                        </div><!--/.dropdown-->
+                    </ul>
+                </nav>
         </div><!--/#header-text-->
-        </header>
-    <main>
-        <h3>Contact Wendy</h3>
-        <p>Connect today to book your complementary discovery session, and start making the commitment to your health and wellness.</p>
-        <div id="contact-form">
-            <form enctype="multipart/form-data" action="#" id="form" method="POST" name="form">
-                <label>Name: <br /><input type="text" name="name" size="30" maxlength="60" placeholder="(Required)" value="" /></label><br /><br />
-                <label>Email Address: <br /><input type="text" name="email" size="30" maxlength="80" value="" placeholder="(Required)"/></label><br /><br />
-                <label>Please tell us more about your request: <br /><textarea name="comment" rows="5" cols="40" value="" placeholder="(Required)"></textarea></label><br /><br />
-                <p><input type="submit" class="submit" name="submit" value="Submit" /></p>
-            </form>
-        </div><!--/#contact-form-->
+    </header>
+    <main id="contact-main">
+        <div id="contact-section-1">
+            <div id="contact-intro-text">
+                <h3>Contact Wendy</h3>
+                <p>Connect today to book your complementary discovery session, and start making the commitment to your health and wellness.</p>
+            </div><!--/#contact-intro-text-->
+            <div id="contact-form">
+                <form enctype="multipart/form-data" action="#" id="form" method="POST" name="form">
+                    <p><label>Name: <br /><input type="text" name="name" size="30" maxlength="60" placeholder="(Required)" value="" /></label></p>
+                    <p><label>Email Address: <br /><input type="text" name="email" size="30" maxlength="80" value="" placeholder="(Required)"/></label></p>
+                    <p class="message"><label>Message: <br /><textarea name="comment" rows="5" cols="40" maxlength="2000" value="" placeholder="(Required)"></textarea></label></p>
+                    <p class="contact-smaller">(Maximum 2,000 characters)</p>
+                    <p><input type="submit" class="submit" name="submit" value="Submit" /></p>
+                </form>
+            </div><!--/#contact-form-->
+        </div><!--/#contact-section-1-->
+        <div id="contact-section-2">
+            <div id="image-quote">
+                <!-- <img src="images/india-hike.JPG" title="Hiking photo from India with Napoleon Hill quote" alt="India hiking photo with quote"> -->
+                <div class="image-quote-text">
+                    <p class="quote">"A goal is a dream with a deadline."</p>
+                    <p class="author">- Napoleon Hill</p>
+                </div>
+            </div><!--/#image-quote-->
 
-        <div id="image-quote">
-            <img src="images/india-hike.JPG" title="Hiking photo from India with Napoleon Hill quote" alt="India hiking photo with quote">
-            <p>"A goal is a dream with a deadline.</p>
-            <p>- Napoleon Hill</p>
-        </div><!--/#image-quote-->
+            <div id="booking-sessions">
+                <h4>In person booking sessions</h4>
+                <p><strong>55 Spring Garden Ave.</strong></p>
+                <p>Suite 200</p>
+                <p>Toronto, ON&ensp;M2N 3G1</p>
+                <p class="smaller">(2 blocks north of Yonge &amp; Sheppard)</p>
+                <div class="details">
+                    <p><strong>Phone:</strong> (416) 804-7304</p>
+                    <p><strong>Email:</strong> wendytunney@outlook.com</p>
+                </div><!--/.details-->    
+            </div><!--/#booking-sessions-->
 
-        <div id="booking-sessions">
-            <h4>In person booking sessions</h4>
-            <p><strong>55 Spring Garden Ave.</strong></p>
-            <p>Suite 200</p>
-            <p>Toronto, ON&ensp;M2N 3G1</p>
-            <p class="smaller">(2 blocks north of Yonge &amp; Sheppard)</p>
-            <p><strong>Phone:</strong> (416) 804-7304</p>
-            <p><strong>Email:</strong> wendytunney@outlook.com</p>
-        </div><!--/#booking-sessions-->
-
-        <h4><?php include "secure_email_code.php"?></h4>
-
+            <h4><?php include "secure_email_code.php"?></h4>
+        </div><!--/#contact-section-2-->
     </main>
     <footer>
-        <h4>Wendy Tunney&ensp; |&ensp; 416-804-7304 <br> wendytunney@outlook.com</h4>
+        <h5>Wendy Tunney&ensp; |&ensp; 416-804-7304 <br> wendytunney@outlook.com</h5>
         <div id="footer-nav">
             <ul>
                 <li><a href="index.html" title="Home page">Home</a></li>
                 <li><a href="services.html" title="Services page">Services</a></li>
-                <li><a href="contact.php" title="Contact page">Contact</a></li>
+                <li class="breadcrumbs"><a href="contact.php" title="Contact page">Contact</a></li>
             </ul>
         </div><!--/#footer-nav-->
     </footer>
