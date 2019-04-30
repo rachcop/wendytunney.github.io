@@ -195,8 +195,6 @@ footer h5 {
     margin-bottom: 2rem;
 }
 
-
-
 /* Home page styling */
 
 #home-main {
@@ -366,7 +364,8 @@ h3 strong {
     font-size: 1.15rem;
 }
 
-#discovery h4 {
+#discovery h4,
+#sixty h4 {
     color: #545454;
     font-size: 2rem;
 }
@@ -383,7 +382,8 @@ h3 strong {
     margin-right: 2.25rem;
 }
 
-#discovery-section-1 p > strong {
+#discovery-section-1 p > strong,
+#coaching-sessions-section-1 p > strong {
     font-size: 1.25rem;
     color: #378289;
     font-weight: 500;
@@ -401,26 +401,45 @@ h3 strong {
     padding-bottom: 1.5rem;
 }
 
-#discovery-section-2 p > strong {
+#discovery-section-2 p > strong,
+#coaching-sessions-section-2 p > strong {
     font-size: 1.15rem;
     color: #545454;
     font-weight: 300;
 }
 
-#discovery-section-2 ul {
+#discovery-section-2 ul,
+#coaching-sessions-section-2 ul {
     margin-left: 0;
     padding-left: 1.05rem;
 }
 
-#discovery-section-2 li {
+#discovery-section-2 li,
+#coaching-sessions-section-2 li {
     color: #378289;
 }
 
-.discovery-duration { 
+.discovery-duration,
+.sessions-duration { 
     margin-left: 0.50rem;
     margin-right: 6rem;
 }
 
+#coaching-sessions-section-1,
+#coaching-sessions-section-2 {
+    display: flex;
+    margin-top: 2rem;
+}
+
+#coaching-sessions {
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid lightgray;
+}
+
+#sixty img {
+    margin-right: 2.25rem;
+}
 
 
 Contact page styling
