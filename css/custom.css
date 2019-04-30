@@ -76,11 +76,22 @@ header {
     padding-right: 4rem;
 }
 
-.header-nav li, 
 .header-nav li a,
 .contact-nav-link a,
 .home-nav-link a {
     color: #378289;
+}
+
+.header-nav li a:hover,
+.contact-nav-link a:hover,
+.home-nav-link a:hover {
+    color: #545454;
+}
+
+.header-nav li a:active,
+.contact-nav-link a:active,
+.home-nav-link a:active {
+    color: #faef00;
 }
 
 .dropdown {
@@ -130,7 +141,7 @@ header {
 /* Footer styling */
 
 footer {
-    background-color: rgba(55, 130, 137, 0.5);
+    background-color: #378289;
     position: absolute;
     width: 100%;
     display: flex;
@@ -151,11 +162,11 @@ footer {
 
 #footer-nav li:nth-child(1),
 #footer-nav li:nth-child(2) {
-    border-right: 1px solid #545454;
+    border-right: 1px solid #f1f1f1;
 }
 
 #footer-nav li a {
-    color: #323232;
+    color: #fff;
 }
 
 #footer-nav li a:hover {
@@ -175,7 +186,7 @@ footer h5 {
     text-align: center;
     line-height: 1.50rem;
     font-weight: lighter;
-    color: #323232;
+    color: #fff;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -299,9 +310,6 @@ h3 strong {
 }
 
 
-
-
-
 /* Contact page styling */
 
 #contact-main {
@@ -409,6 +417,20 @@ form label {
     font-size: 0.75rem;
     margin-top: 0;
     padding-top: 0;
+}
+
+.submit {
+    font-family: 'Antic Didone', serif;
+    font-size: 1.15rem;
+    color: #323232;
+    background-color: #ffffff;
+    padding: 0.50rem 1.5rem 0.50rem 1.5rem;
+    border: 2px solid #378289;
+}
+
+.submit:hover {
+    background-color: rgba(55, 130, 137, 0.80);
+    color: #fff;
 }
 
 
