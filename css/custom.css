@@ -366,7 +366,8 @@ h3 strong {
 }
 
 #discovery h4,
-#sixty h4 {
+#sixty h4,
+#packages h4 {
     color: #545454;
     font-size: 2rem;
 }
@@ -374,12 +375,17 @@ h3 strong {
 #discovery-section-1,
 #discovery-section-2,
 #reiki-sessions-section-1,
-#reiki-sessions-section-2 {
+#reiki-sessions-section-2,
+#coaching-packages-section-1, 
+#coaching-packages-section-2,
+#integrative-healing-packages-section-1,
+#integrative-healing-packages-section-2 {
     display: flex;
     margin-top: 2rem;
 }
 
-#discovery img {
+#discovery img,
+#packages img {
     height: 45%;
     width: 45%;
     margin-right: 2.25rem;
@@ -387,10 +393,12 @@ h3 strong {
 
 #discovery-section-1 p > strong,
 #coaching-sessions-section-1 p > strong,
-#reiki-sessions-section-1 p > strong {
+#reiki-sessions-section-1 p > strong,
+#coaching-packages-section-1 p > strong,
+#integrative-healing-packages-section-1 p > strong {
     font-size: 1.25rem;
     color: #378289;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .discovery-section-text {
@@ -407,7 +415,9 @@ h3 strong {
 
 #discovery-section-2 p > strong,
 #coaching-sessions-section-2 p > strong,
-#reiki-sessions-section-2 p > strong {
+#reiki-sessions-section-2 p > strong,
+#coaching-packages-section-2 p > strong,
+#integrative-healing-packages-section-2 p > strong {
     font-size: 1.15rem;
     color: #545454;
     font-weight: 300;
@@ -422,7 +432,9 @@ h3 strong {
 
 #discovery-section-2 li,
 #coaching-sessions-section-2 li,
-#reiki-sessions-section-2 li {
+#reiki-sessions-section-2 li,
+#coaching-packages-section-2 li,
+#integrative-healing-packages-section-2 li {
     color: #378289;
 }
 
@@ -439,29 +451,54 @@ h3 strong {
     margin-top: 2rem;
 }
 
-#coaching-sessions {
+#coaching-sessions,
+#coaching-package {
     margin-bottom: 3rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid lightgray;
 }
 
-#reiki-sessions {
+#reiki-sessions,
+#coaching-package {
     padding-bottom: 1.5rem;
 }
 
-#sixty img {
+#sixty img, 
+#packages img {
     margin-right: 2.25rem;
 }
 
-.title-p {
+.title-p strong{
     font-size: 1.5rem;
+    font-weight: lighter;
     margin-bottom: 0;
 }
 
-#coaching-sessions .title-p {
+#coaching-sessions .title-p, 
+#coaching-package .title-p {
     margin-top: 2.5rem;
 }
 
+#coaching-packages-section-2 ul,
+#integrative-healing-packages-section-2 ul,
+.packages-duration {
+    margin-left: 0;
+    padding-left: 1rem;
+}
+
+.packages-duration p > strong {
+    margin-right: 4rem;
+}
+
+#promise p {
+    font-size: 0.90rem;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+#promise p > strong { 
+    color: #378289;
+}
 
 /* Contact page styling */
 
