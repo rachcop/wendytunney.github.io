@@ -33,7 +33,7 @@ p, ul, li {
     color: #323232;
 }
 
-/* Header styling */
+/**************** Header styling ****************/
 
 header {
     display: flex;
@@ -142,7 +142,7 @@ header {
     display: block;
 }
 
-/* Footer styling */
+/**************** Footer styling ****************/
 
 footer {
     background-color: #378289;
@@ -195,7 +195,7 @@ footer h5 {
     margin-bottom: 2rem;
 }
 
-/* Home page styling */
+/**************** Home page styling ****************/
 
 #home-main {
     padding: 0 6rem 3rem 6rem;
@@ -302,31 +302,46 @@ h3 strong {
     cursor: pointer;
 }
 
-/* Services page styling */
+/**************** Services page styling ****************/
 
 #services-main {
     padding: 0 6rem 3rem 6rem;
 }
 
 #services-main h3 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
     color: #378289;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .nav-tabs {
-    background-color: #f1f1f1;
+    padding: 1rem;
 }
 
-.nav-tabs li{
-    margin-left: 1rem;
+.nav-tabs li {
     text-align: center;
     font-weight: 500;
 }
 
 .nav-tabs a {
     text-decoration: none;
+    color: #545454;
+    font-size: 1.25rem;
+}
+
+.nav-tabs a:hover {
+    color: #fff;
+}
+
+.nav-tabs .nav-link:hover, 
+.nav-tabs .nav-link:focus {
+    background-color: #378289;
+}
+
+.nav-link {
+    width: 215px;
+    align-items: center;
 }
 
 .tab-pane {
@@ -336,7 +351,7 @@ h3 strong {
     color: #378289;
 }
 
-.tab-pane h3{
+.tab-pane h3 {
     color: #323232;
     font-size: 32px;
 }
@@ -500,7 +515,7 @@ h3 strong {
     color: #378289;
 }
 
-/* Contact page styling */
+/**************** Contact page styling ****************/
 
 #contact-main {
     padding: 0 12rem 3rem 12rem;
