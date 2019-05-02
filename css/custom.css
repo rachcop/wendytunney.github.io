@@ -653,107 +653,23 @@ form label {
     
     /**************** Header styling ****************/
 
-    header {
-        display: flex;
-        background-image: url('../images/sunflower.jpg');
-        background-repeat: no-repeat;
-    }
-
-    /* TODO: Look into if this is needed (Added for potential accessibility concerns) */
-    .header-image {
-        display: none;
-    }
-
     #header-text {
-        padding-left: 2rem;
+        padding-left: 0;
         margin-top: 0.50rem;
     }
 
-    .header-nav {
-        background-color: #378289;
-        list-style-type: none;
-        width: 100%;
-    }
-
-    .header-nav a {
-        text-decoration: none;
-    }
-
     .header-nav li {
-        margin-right: 4rem;
-        font-size: 1.25rem;
+        margin-right: 0;
+        font-size: 1rem;
     }
 
     .contact-nav-link {
-        border-left: 1px solid #545454;
-        padding-left: 4rem;
+        padding-left: 0;
     }
 
     .home-nav-link {
         border-right: 1px solid #545454;
-        padding-right: 4rem;
-    }
-
-    .header-nav li a,
-    .contact-nav-link a,
-    .home-nav-link a {
-        color: #378289;
-    }
-
-    .header-nav li a:hover,
-    .contact-nav-link a:hover,
-    .home-nav-link a:hover {
-        color: #545454;
-    }
-
-    .header-nav li a:active,
-    .contact-nav-link a:active,
-    .home-nav-link a:active {
-        color: #faef00;
-    }
-
-    .dropdown {
-        overflow: hidden;
-    }
-
-    .dropdown .dropbtn {
-        border: none;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-    }
-
-    .dropdown-content ul {
-        list-style-type: none;
-        padding: 0.50rem 0 0.75em 0;
-        background-color: #f1f1f1;
-        border-radius: 2px;
-    }
-
-    .dropdown-content li a {
-        font-size: 1.05rem;
-        line-height: 2rem;
-        color: #323232;
-        margin-left: 1rem;
-    }
-
-    .dropdown-content li:hover {
-        background-color: #fff;
-        width: 100%;
-    }
-
-    .dropdown-content a:hover {
-        color: #378289;
-    }
-
-    .dropdown-content a:active {
-        color: #faef00;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
+        padding-right: 0;
     }
 
     /**************** Home page styling - Mobile ****************/
