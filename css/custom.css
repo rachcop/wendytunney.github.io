@@ -4,6 +4,7 @@ body, html {
     margin: 0;
 }
 
+
 h1, h2, h3, h4, h5 {
     font-family: 'Antic Didone', serif;
 }
@@ -446,7 +447,9 @@ h3 strong {
 
 #discovery-section-2 ul,
 #coaching-sessions-section-2 ul,
-#reiki-sessions-section-2 ul {
+#reiki-sessions-section-2 ul,
+#coaching-packages-section-2 ul,
+#integrative-healing-packages-section-2 ul {
     margin-left: 0;
     padding-left: 1.05rem;
 }
@@ -461,7 +464,8 @@ h3 strong {
 
 .discovery-duration,
 .sessions-duration ,
-.reiki-duration { 
+.reiki-duration,
+.packages-duration { 
     margin-left: 0.50rem;
     margin-right: 6rem;
 }
@@ -500,17 +504,6 @@ h3 strong {
     margin-top: 2.5rem;
 }
 
-#coaching-packages-section-2 ul,
-#integrative-healing-packages-section-2 ul,
-.packages-duration {
-    margin-left: 0;
-    padding-left: 1rem;
-}
-
-.packages-duration p > strong {
-    margin-right: 4rem;
-}
-
 #promise p {
     font-size: 0.90rem;
     margin-top: 3rem;
@@ -533,10 +526,10 @@ h3 strong {
     font-size: 2rem;
 }
 
-form label {
+/* form label {
     font-family: 'Antic Didone', serif;
     font-size: 1.15rem;
-}
+} */
 
 #contact-main {
     display: flex;
@@ -607,6 +600,7 @@ form label {
     margin-top: 1.5rem;
 }
 
+/* 
 #contact-form textarea {
     min-width: 250px;
     max-width: 400px;
@@ -622,7 +616,8 @@ form label {
     line-height: 2.5rem;
     padding-bottom: 0;
     margin-bottom: 0;
-}
+} 
+*/
 
 .contact-smaller {
     font-size: 0.75rem;
@@ -630,7 +625,7 @@ form label {
     padding-top: 0;
 }
 
-.submit {
+/* .submit {
     font-family: 'Antic Didone', serif;
     font-size: 1.15rem;
     color: #323232;
@@ -643,19 +638,32 @@ form label {
     background-color: #378289;
     color: #fff;
     cursor: pointer;
-}
+} */
 
+#button .contact-button {
+    margin-top: 2.75rem;
+}
 
 /********************* Mobile Specific Styling *********************/
 
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 320px) {
     
     /**************** Header styling ****************/
+    
+    header {
+        background-size: 75%;
+        border-bottom: none;
+    }
 
     #header-text {
-        padding-left: 0;
+        padding-left: 5rem;
         margin-top: 0.50rem;
+    }
+
+    .header-nav {
+        padding-bottom: 0;
+        margin-left: 0;
     }
 
     .header-nav li {
@@ -684,20 +692,126 @@ form label {
 
 
     /**************** Contact page styling - Mobile ****************/
+
+
 }
-
-
-/********************* Large device - Tablet Specific Styling *********************/
 
 @media screen and (min-width: 768px) {
 
+    header {
+        background-size: 65%;
+        border-bottom: 7px solid #378289;
+    }
+
+    #header-text {
+        padding-left: 25rem;
+        margin-top: 0.50rem;
+    }
+
+    #header-text h2 {
+        width: 80%;
+        padding-left: 1.5rem;
+    }
+
+    .header-nav {
+        background-color: transparent;
+    }
+
+    .header-nav li {
+        margin-right: 0;
+        font-size: 1rem;
+    }
+
+    .contact-nav-link {
+        padding-left: 0;
+    }
+
+    .home-nav-link {
+        border-right: 1px solid #545454;
+        padding-right: 0;
+    }
+
+}
+
+/********************* Large tablet/device size - Specific Styling *********************/
+
+@media screen and (min-width: 1024px) {
+    header {
+        background-size: 55%;
+        border-bottom: 7px solid #378289;
+    }
+
+    #header-text {
+        padding-left: 30rem;
+        margin-top: 1.5rem;
+    }
+    
+    .header-nav {
+        list-style-type: none;
+        display: flex;
+        margin-top: 3rem;
+        margin-left: 5rem;
+        padding-bottom: 3rem;
+        background-color: transparent;
+    }
+    
+    .header-nav li {
+        margin-right: 4rem;
+        font-size: 1.25rem;
+    }
+    
+    .contact-nav-link {
+        border-left: 1px solid #545454;
+        padding-left: 4rem;
+    }
+    
+    .home-nav-link {
+        border-right: 1px solid #545454;
+        padding-right: 4rem;
+    }
+
 }
 
 
-/********************* Large Desktop Specific Styling *********************/
+/********************* Large desktop - Specific Styling *********************/
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1600px) {
+    header {
+        background-size: 35%;
+        border-bottom: 7px solid #378289;
+    }
+    
+    #header-text {
+        padding-left: 50rem;
+        margin-top: 1.5rem;
+    }
+    
+    .header-nav {
+        list-style-type: none;
+        display: flex;
+        margin-top: 3rem;
+        margin-left: 5rem;
+        padding-bottom: 3rem;
+        background-color: transparent;
+    }
 
-
+    .header-nav li {
+        margin-right: 4rem;
+        font-size: 1.25rem;
+    }
+    
+    .contact-nav-link {
+        border-left: 1px solid #545454;
+        padding-left: 4rem;
+        padding-right: 2.5rem;
+    }
+    
+    .home-nav-link {
+        border-right: 1px solid #545454;
+        padding-right: 4rem;
+    }
 }
+
+
+
 
