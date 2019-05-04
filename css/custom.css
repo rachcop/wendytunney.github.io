@@ -465,11 +465,7 @@ h3 strong {
 
 /**************** Contact page styling ****************/
 
-#contact-main {
-    padding: 0 12rem 3rem 12rem;
-}
-
-#contact-main h3 {
+.contact-main h3 {
     margin-top: 2.65rem;
     color: #378289;
     font-size: 2rem;
@@ -480,21 +476,21 @@ h3 strong {
     font-size: 1.15rem;
 } */
 
-#contact-main {
+.contact-main {
     display: flex;
     justify-content: center;
 }
 
-#contact-intro-text p {
+.contact-intro-text p {
     width: 80%;
     font-size: 1.25rem;
 }
 
-#contact-section-2 {
+.contact-section-2 {
     margin-top: 2.5rem;
 }
 
-#image-quote {
+.image-quote {
     background-image: url('../images/india-hike.JPG');
     background-repeat: no-repeat;
     height: 320px;
@@ -522,7 +518,7 @@ h3 strong {
     margin-top: 0;
 }
 
-#booking-sessions h4 {
+.booking-sessions h4 {
     font-family: 'Hind Siliguri Light', sans-serif;
     font-weight: 500;
     color: #378289;
@@ -530,7 +526,7 @@ h3 strong {
     margin-bottom: 1rem;
 }
 
-#booking-sessions p {
+.booking-sessions p {
     color: #545454;
     padding: 0;
     margin: 0.45rem 0 0 0;
@@ -540,7 +536,7 @@ h3 strong {
     font-size: 0.80rem;
 }
 
-#booking-sessions strong {
+.booking-sessions strong {
     color: #323232;
     font-weight: 500;
 }
@@ -698,6 +694,15 @@ h3 strong {
         padding: 1.50rem;
         font-size: 1.75rem;
     }
+
+    .contact-main {
+        display: block;
+    }
+    
+    .contact-section-1 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
     
 }
 
@@ -782,6 +787,10 @@ h3 strong {
         font-size: 1.50em;
     }
 
+    .contact-main {
+        height: 55vh;
+    }
+
 }
 
 /************ STYLING FOR IPAD (TILTED) TO DESKTOP ************/
@@ -855,6 +864,11 @@ h3 strong {
     .services-button a {
         padding: 1.50rem;
         font-size: 1.50em;
+    }
+
+    .contact-main {
+        padding: 0 12rem 3rem 12rem;
+        height: 100%;
     }
 
     
