@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-    color: #545454;
+    color: #323232;
     text-align: center;
     font-size: 1.5rem;
     font-weight: lighter;
@@ -237,17 +237,15 @@ h3 strong {
 }
 
 .button a,
-#services-button a {
+.services-button a {
     border: 1.5px solid;
     border-top-color: #378289;
     border-left-color: #378289;
     border-bottom-color: #faef00;
     border-right-color: #faef00;
-    padding: 1.15em;
     text-decoration: none;
     color: #378289;
     font-weight: 500;
-    font-size: 1.50em;
     text-align: center;
 }
 
@@ -591,11 +589,11 @@ h3 strong {
     cursor: pointer;
 } */
 
-#button .contact-button {
+.button .contact-button {
     margin-top: 2.75rem;
 }
 
-/********************* Mobile Specific Styling *********************/
+/************** STYLING FOR MOBILE (IPHONE 5+) **************/
 
 
 @media only screen and (min-width: 320px) {
@@ -618,38 +616,93 @@ h3 strong {
         display: block;
     }
 
+    .home-header-text h3 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        font-size: 3rem;
+        text-align: center;
+        width: 90%;
+        margin-top: 3rem;
+    }
+
+    .home-main .home-intro-text {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
     .home-main {
         display: block;
+    }
+
+    .mobile-succulents {
+        max-width: 100%;
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .home-intro-image img {
+        display: none;
+    }
+
+    .about-me-header h3 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        font-size: 3rem;
     }
 
     .about-me {
         display: block;
     }
 
+    .about-me-image img{
+        max-width: 43vh;
+        margin-top: 0.5rem;
+        margin-left: 3rem;
+    }
+
     .home-intro-text p,
     .about-me-text p {
         font-size: 1.75rem;
-        margin-top: 1.50rem;
+        margin-top: 2.5rem;
+    }
+
+    .about-me-text p {
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 
     .home-contact {
         display: block;
+        margin-top: 2rem;
     }
 
     .ready {
-        font-size: 1.5rem;
-        width: 50%;
-        padding-right: 2rem;
-        margin-left: 5rem;
+        font-size: 2rem;
+        max-width: 100%;
+        padding-right: 6rem;
+        padding-left: 4rem;
     }
 
     .footer-nav li:nth-child(1),
     .footer-nav li:nth-child(2) {
         border-right: none;
     }
+
+    .button {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        margin-left: 4.75rem;
+    }
+
+    .button a {
+        padding: 1.50rem;
+        font-size: 1.75rem;
+    }
     
 }
 
+
+/************** STYLING FOR LARGE DEVICES (IPAD) **************/
 
 @media only screen and (min-width: 768px) {
     
@@ -658,20 +711,53 @@ h3 strong {
         display: flex;
     }
 
+
     .header-image img {
         max-height: 100%;
         max-width: 100%;
+    }
+
+    .home-header-text h3 {
+        text-align: left;
     }
 
     .header-text {
         background-color: transparent;
     }
 
+    .home-main .home-intro-text {
+        padding-left: 6rem;
+        padding-right: 6rem;
+        display: inline;
+    }
+
+    .home-intro-text p {
+        margin-top: 2rem;
+    }
+
+    .mobile-succulents {
+        max-width: 75%;
+        margin-left: 6rem;
+    }
 
     .home-contact {
         display: flex;
-        margin-top: 2rem;
-        margin-bottom: 2.5rem;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+    }
+
+    .about-me {
+        display: flex;
+    }
+
+    .about-me-image img{
+        max-width: 40vh;
+        margin-top: 0.5rem;
+        margin-left: 3.5rem;
+    }
+
+    .about-me-text p {
+        margin-top: 1rem;
     }
 
     .button {
@@ -680,7 +766,9 @@ h3 strong {
 
     .ready {
         font-size: 1.75rem;
-        width: 70%;
+        max-width: 80%;
+        padding-right: 0;
+        padding-left: 5rem;
     }
 
     .footer-nav li:nth-child(1),
@@ -688,15 +776,26 @@ h3 strong {
         border-right: 1px solid #f1f1f1;
     }
 
+    .button a,
+    .services-button a {
+        padding: 1.50rem;
+        font-size: 1.50em;
+    }
 
 }
 
-@media only screen and (min-width: 1200px) {
+/************ STYLING FOR IPAD (TILTED) TO DESKTOP ************/
+
+@media only screen and (min-width: 994px) {
     
     .header-text {
         width: 40%;
         margin-top: 2rem;
         text-align: center;
+    }
+
+    .home-header-text h3 {
+        font-size: 4rem;
     }
 
     .header-text .header-nav {
@@ -715,6 +814,14 @@ h3 strong {
         display: flex;
     }
 
+    .home-intro-image img {
+        display: inline-flex;
+    }
+
+    .mobile-succulents { 
+        display: none;
+    }
+
     .about-me {
         display: flex;
     }
@@ -729,11 +836,13 @@ h3 strong {
     .home-contact {
         display: flex;
         margin-top: 2rem;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
     }
 
     .ready {
-        font-size: 3rem;
-        width: 75%;
+        font-size: 2.5rem;
+        width: 100%;
         padding-right: 2rem;
         margin-top: 5rem;
     }
@@ -741,6 +850,13 @@ h3 strong {
     .button {
         padding-top: 5rem;
     }
+
+    .button a,
+    .services-button a {
+        padding: 1.50rem;
+        font-size: 1.50em;
+    }
+
     
 }
 
