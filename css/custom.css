@@ -323,7 +323,6 @@ h3 strong {
 .coaching-sessions-section-1,
 .coaching-sessions-section-2 {
     display: flex;
-    margin-top: 2rem;
 }
 
 .coaching-sessions,
@@ -580,14 +579,15 @@ h3 strong {
         margin-left: 4.75rem;
     }
 
-    .button a {
+    .button a,
+    .services-button a {
         padding: 1.50rem;
         font-size: 1.75rem;
     }
 
-    .tab-pane {
-        border: none;
-        background-color: transparent;
+    .services-button {
+        margin-bottom: 4rem;
+        margin-top: 2rem;
     }
 
     .reiki-sessions-section-1,
@@ -695,11 +695,15 @@ h3 strong {
         margin-top: 8rem;
     }
 
-    .discovery-section-text {
+    .discovery-section-text,
+    .reiki-sessions-text,
+    .coaching-sessions-text,
+    .coaching-packages-text,
+    .integrative-healing-text {
         margin-left: 2rem;
         margin-right: 2rem;
-        width: 85%;
         margin-top: 2rem;
+        width: 85%;
     }
 
     .discovery-section-text p {
@@ -758,6 +762,17 @@ h3 strong {
     .title-p {
         font-size: 2.25rem;
         margin-left: 1rem;
+    }
+
+    .reiki-sessions-section-1,
+    .integrative-healing-packages {
+        margin-top: 4rem;
+    }
+
+    .promise {
+        width: 90%;
+        margin-left: 2rem;
+        padding-right: 2rem;
     }
 
     .contact-section-1 {
@@ -849,15 +864,14 @@ h3 strong {
     }
 
     .discovery-section-1,
-    .discovery-section-2,
-    .reiki-sessions-section-1,
-    .reiki-sessions-section-2,
-    .coaching-packages-section-1, 
-    .coaching-packages-section-2,
-    .integrative-healing-packages-section-1,
-    .integrative-healing-packages-section-2 {
+    .discovery-section-2 {
         display: flex;
         margin-top: 2rem;
+    }
+
+    .reiki-sessions-section-1,
+    .integrative-healing-packages {
+        margin-top: 4rem;
     }
 
     .discovery-section-image img {
@@ -902,6 +916,15 @@ h3 strong {
     .coaching-packages-section-1,
     .integrative-healing-packages-section-1 {
         display: block;
+    }
+
+    .discovery-section-1 ,
+    .discovery-section-2,
+    .reiki-sessions-section-2,
+    .coaching-packages-section-2,
+    .coaching-sessions-section-2,
+    .integrative-healing-packages-section-2 {
+        display: flex;
     }
 
     .contact-main {
