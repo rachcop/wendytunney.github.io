@@ -72,18 +72,14 @@ p, ul, li {
     text-align: center;
 }
 
-.contact-nav-link a {
-    border-left: 1px solid #545454;
-    padding-left: 4rem;
-}
-
 .home-nav-link {
     padding-right: 2rem;
 }
 
 .header-nav li a,
 .contact-nav-link a,
-.home-nav-link a {
+.home-nav-link a,
+.services-contact-nav-link a {
     color: #378289;
 }
 
@@ -94,7 +90,8 @@ p, ul, li {
 
 .header-nav li a:hover,
 .contact-nav-link a:hover,
-.home-nav-link a:hover {
+.home-nav-link a:hover
+.services-contact-nav-link a:hover {
     color: #545454;
 }
 
@@ -476,6 +473,12 @@ h3 strong {
 
 @media only screen and (min-width: 320px) {
 
+    .contact-nav-link a,
+    .services-contact-nav-link a {
+        border-left: none;
+        padding-left: 0;
+    }
+
     .header-image img {
         min-height: 100%;
         min-width: 50%;
@@ -488,6 +491,21 @@ h3 strong {
     .header-text .header-nav {
         margin-left: 0;
         display: block;
+    }
+    
+    .footer {
+        padding-bottom: 1.5rem;
+    }
+
+    .footer h5 {
+        line-height: 1rem;
+        text-align: center;
+        font-size: 1.75rem;
+        margin-left: 2rem;
+    }
+
+    .footer h5:nth-child(1) {
+        padding-top: 1.5rem;
     }
 
     .footer-nav ul {
@@ -829,6 +847,12 @@ h3 strong {
 
 @media only screen and (min-width: 768px) {
     
+    .contact-nav-link a,
+    .services-contact-nav-link a {
+        border-left: 1px solid #545454;
+        padding-left: 4rem;
+    }
+
     .header-text .header-nav {
         margin-left: 4rem;
         display: flex;
@@ -1101,6 +1125,10 @@ h3 strong {
 
     .header-image img {
         max-width: 100%;
+    }
+
+    .footer-nav {
+        padding-top: 2.5rem;
     }
 
     .footer-nav ul {
