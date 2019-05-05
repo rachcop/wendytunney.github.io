@@ -844,7 +844,7 @@ h3 strong {
     
     .contact-nav-link a,
     .services-contact-nav-link a,
-    .dropbtn a {
+    .services-btn {
         border-left: 1px solid #545454;
         padding-left: 4rem;
     }
