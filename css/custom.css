@@ -78,13 +78,18 @@ p, ul, li {
 }
 
 .home-nav-link {
-    padding-right: 4rem;
+    padding-right: 2rem;
 }
 
 .header-nav li a,
 .contact-nav-link a,
 .home-nav-link a {
     color: #378289;
+}
+
+.services-contact-nav-link a {
+    border-left: 1px solid #545454;
+    padding-left: 4rem;
 }
 
 .header-nav li a:hover,
@@ -250,7 +255,7 @@ h3 strong {
 }
 
 .button a:hover,
-#services-button a:hover {
+.services-button a:hover {
     background-color: #378289;
     color: #fff;
     border-top-color: #faef00;
@@ -260,11 +265,8 @@ h3 strong {
 
 /**************** Services page styling ****************/
 
-#services-main {
-    padding: 0 6rem 3rem 6rem;
-}
 
-#services-main h3 {
+.services-main-tabs h3 {
     margin-top: 2rem;
     margin-bottom: 2.5rem;
     color: #378289;
@@ -300,73 +302,56 @@ h3 strong {
     align-items: center;
 }
 
-.tab-pane {
-    padding: 2rem 5rem;
-    border: 1px solid white;
-    background-color: rgba(84, 84, 84, 0.05);
-    color: #378289;
-}
-
 .tab-pane h3 {
     color: #323232;
     font-size: 32px;
 }
 
-#service-tabs {
+.service-tabs {
     margin-bottom: 4rem;
 }
 
-#services-button {
+.services-button {
     display: flex;
     justify-content: center;
 }
 
-#coaching h4 {
+.coaching h4 {
     font-size: 1.65rem;
     color: #545454;
 }
 
-#coaching ul {
+.coaching ul {
     list-style-image: url('../images/coral-bullet.png');
     padding-bottom: 1.5rem;
 }
 
-#coaching li {
+.coaching li {
     padding-top: 1.5rem;
     font-size: 1.15rem;
 }
 
-#discovery h4,
-#sixty h4,
-#packages h4 {
+.discovery h4,
+.sixty h4,
+.packages h4 {
     color: #545454;
     font-size: 2rem;
 }
 
-#discovery-section-1,
-#discovery-section-2,
-#reiki-sessions-section-1,
-#reiki-sessions-section-2,
-#coaching-packages-section-1, 
-#coaching-packages-section-2,
-#integrative-healing-packages-section-1,
-#integrative-healing-packages-section-2 {
-    display: flex;
-    margin-top: 2rem;
-}
 
-#discovery img,
-#packages img {
+
+.discovery img,
+.packages img {
     height: 45%;
     width: 45%;
     margin-right: 2.25rem;
 }
 
-#discovery-section-1 p > strong,
-#coaching-sessions-section-1 p > strong,
-#reiki-sessions-section-1 p > strong,
-#coaching-packages-section-1 p > strong,
-#integrative-healing-packages-section-1 p > strong {
+.discovery-section-1 p > strong,
+.coaching-sessions-section-1 p > strong,
+.reiki-sessions-section-1 p > strong,
+.coaching-packages-section-1 p > strong,
+.integrative-healing-packages-section-1 p > strong {
     font-size: 1.25rem;
     color: #378289;
     font-weight: 300;
@@ -380,34 +365,34 @@ h3 strong {
     margin-top: 2rem;
 }
 
-#discovery-section-2 {
+.discovery-section-2 {
     padding-bottom: 1.5rem;
 }
 
-#discovery-section-2 p > strong,
-#coaching-sessions-section-2 p > strong,
-#reiki-sessions-section-2 p > strong,
-#coaching-packages-section-2 p > strong,
-#integrative-healing-packages-section-2 p > strong {
+.discovery-section-2 p > strong,
+.coaching-sessions-section-2 p > strong,
+.reiki-sessions-section-2 p > strong,
+.coaching-packages-section-2 p > strong,
+.integrative-healing-packages-section-2 p > strong {
     font-size: 1.15rem;
     color: #545454;
     font-weight: 300;
 }
 
-#discovery-section-2 ul,
-#coaching-sessions-section-2 ul,
-#reiki-sessions-section-2 ul,
-#coaching-packages-section-2 ul,
-#integrative-healing-packages-section-2 ul {
+.discovery-section-2 ul,
+.coaching-sessions-section-2 ul,
+.reiki-sessions-section-2 ul,
+.coaching-packages-section-2 ul,
+.integrative-healing-packages-section-2 ul {
     margin-left: 0;
     padding-left: 1.05rem;
 }
 
-#discovery-section-2 li,
-#coaching-sessions-section-2 li,
-#reiki-sessions-section-2 li,
-#coaching-packages-section-2 li,
-#integrative-healing-packages-section-2 li {
+.discovery-section-2 li,
+.coaching-sessions-section-2 li,
+.reiki-sessions-section-2 li,
+.coaching-packages-section-2 li,
+.integrative-healing-packages-section-2 li {
     color: #378289;
 }
 
@@ -419,26 +404,26 @@ h3 strong {
     margin-right: 6rem;
 }
 
-#coaching-sessions-section-1,
-#coaching-sessions-section-2 {
+.coaching-sessions-section-1,
+.coaching-sessions-section-2 {
     display: flex;
     margin-top: 2rem;
 }
 
-#coaching-sessions,
-#coaching-package {
+.coaching-sessions,
+.coaching-package {
     margin-bottom: 3rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid lightgray;
 }
 
-#reiki-sessions,
-#coaching-package {
+.reiki-sessions,
+.coaching-package {
     padding-bottom: 1.5rem;
 }
 
-#sixty img, 
-#packages img {
+.sixty img, 
+.packages img {
     margin-right: 2.25rem;
 }
 
@@ -448,18 +433,18 @@ h3 strong {
     margin-bottom: 0;
 }
 
-#coaching-sessions .title-p, 
-#coaching-package .title-p {
+.coaching-sessions .title-p, 
+.coaching-package .title-p {
     margin-top: 2.5rem;
 }
 
-#promise p {
+.promise p {
     font-size: 0.90rem;
     margin-top: 3rem;
     padding-bottom: 1.5rem;
 }
 
-#promise p > strong { 
+.promise p > strong { 
     color: #378289;
 }
 
@@ -695,6 +680,23 @@ h3 strong {
         font-size: 1.75rem;
     }
 
+    .tab-pane {
+        border: none;
+        background-color: transparent;
+    }
+
+    .discovery-section-1,
+    .discovery-section-2,
+    .reiki-sessions-section-1,
+    .reiki-sessions-section-2,
+    .coaching-packages-section-1, 
+    .coaching-packages-section-2,
+    .integrative-healing-packages-section-1,
+    .integrative-healing-packages-section-2 {
+        display: flex;
+        margin-top: 2rem;
+    }
+
     .contact-main {
         display: block;
     }
@@ -785,6 +787,25 @@ h3 strong {
     .services-button a {
         padding: 1.50rem;
         font-size: 1.50em;
+    }
+
+    .tab-pane {
+        padding: 2rem 5rem;
+        border: 1px solid white;
+        background-color: rgba(84, 84, 84, 0.05);
+        color: #378289;
+    }
+
+    .discovery-section-1,
+    .discovery-section-2,
+    .reiki-sessions-section-1,
+    .reiki-sessions-section-2,
+    .coaching-packages-section-1, 
+    .coaching-packages-section-2,
+    .integrative-healing-packages-section-1,
+    .integrative-healing-packages-section-2 {
+        display: flex;
+        margin-top: 2rem;
     }
 
     .contact-main {
