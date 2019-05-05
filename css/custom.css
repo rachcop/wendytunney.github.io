@@ -366,7 +366,6 @@ h3 strong {
 } */
 
 .contact-main {
-    display: flex;
     justify-content: center;
 }
 
@@ -1047,7 +1046,10 @@ h3 strong {
     }
 
     .contact-main {
+        padding-top: 4rem;
         height: 55vh;
+        display: flex;
+        margin-bottom: 10rem;
     }
 
     .image-quote-text {
@@ -1160,8 +1162,6 @@ h3 strong {
 
     /***** Services page images styling ******/
 
-
-
     .integrative-healing-packages-section-1 img,
     .coaching-packages-section-1 img {
         max-width: 60vw;
@@ -1195,6 +1195,12 @@ h3 strong {
         padding-left: 8rem;
     }
 
+    .quote {
+        line-height: 4rem;
+        width: 50%;
+        padding-left: 2rem;
+    }
+
     .coaching-content {
         padding-left: 8rem;
     }
@@ -1202,6 +1208,7 @@ h3 strong {
     .contact-main {
         padding: 0 12rem 3rem 12rem;
         height: 100%;
+        margin-bottom: 2rem;
     }
 
     
