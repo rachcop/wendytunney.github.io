@@ -921,7 +921,7 @@ h3 strong {
 
     .footer-nav li:nth-child(1),
     .footer-nav li:nth-child(2) {
-        border-right: 1px solid #f1f1f1;
+        border-right: none;
     }
 
     .button a,
@@ -1128,6 +1128,11 @@ h3 strong {
 
     .footer-nav ul {
         display: flex;
+    }
+
+    .footer-nav li:nth-child(1),
+    .footer-nav li:nth-child(2) {
+        border-right: 1px solid #f1f1f1;
     }
 
     .home-main {
