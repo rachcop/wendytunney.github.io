@@ -698,7 +698,11 @@ h3 strong {
         width: 85%;
     }
 
-    .discovery-section-text p {
+    .discovery-section-text p,
+    .reiki-sessions-text p,
+    .coaching-sessions-text p,
+    .coaching-packages-text p,
+    .integrative-healing-text p {
         max-width: 100vw;
         font-size: 2rem;
     }
@@ -752,7 +756,7 @@ h3 strong {
     }
 
     .title-p {
-        font-size: 2.25rem;
+        font-size: 2.75rem;
         margin-left: 1rem;
     }
 
@@ -1221,7 +1225,6 @@ h3 strong {
         padding-top: 0;
         margin-top: 0;
     }
-
     
 }
 
