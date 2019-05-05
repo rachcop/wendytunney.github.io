@@ -329,17 +329,6 @@ h3 strong {
     border-bottom: 1px solid lightgray;
 }
 
-
-.title-p strong{
-    font-weight: lighter;
-    margin-bottom: 0;
-}
-
-.coaching-sessions .title-p, 
-.coaching-package .title-p {
-    margin-top: 2.5rem;
-}
-
 .promise p {
     margin-top: 3rem;
     padding-bottom: 1.5rem;
@@ -625,14 +614,19 @@ h3 strong {
         display: block;
     }
 
-    .integrative-healing-packages-section-1 img,
-    .coaching-packages-section-1 img,
     .coaching-sessions-section-1 img,
     .reiki-sessions-section-1 img,
     .discovery-section-image img {
         max-width: 100vw;
         max-height: 100vh;
     }
+
+    .integrative-healing-packages-section-1 img,
+    .coaching-packages-section-1 img {
+        max-width: 100vw;
+        max-height: 50vh;
+    }
+
 
     .services-main-nav .services-nav ul {
         display: block;
@@ -666,13 +660,6 @@ h3 strong {
         font-size: 3rem;
         padding-bottom: 2rem;
         padding-top: 1.5rem;
-    }
-
-    .coaching-sessions-section-1,
-    .reiki-sessions-section-1,
-    .coaching-packages-section-1,
-    .integrative-healing-packages-section-1 {
-        display: block;
     }
 
     .coaching-content h4 {
@@ -773,10 +760,18 @@ h3 strong {
         font-size: 2rem;
     }
 
-    .title-p {
+    .coaching .title-p {
         font-size: 2.75rem;
-        margin-left: 1rem;
+        color: #545454;
     }
+
+    .coaching-packages-text .title-p,
+    .integrative-healing-text .title-p,
+    .reiki-sessions-text .title-p,
+    .coaching-sessions-text .title-p {
+        font-size: 2.5rem;
+        color: #545454;
+    } 
 
     .reiki-sessions-section-1,
     .integrative-healing-packages {
@@ -989,13 +984,6 @@ h3 strong {
         color: #faef00;
     }
 
-    .coaching-sessions-section-1,
-    .reiki-sessions-section-1,
-    .coaching-packages-section-1,
-    .integrative-healing-packages-section-1 {
-        display: block;
-    }
-
     .discovery-section-1 ,
     .discovery-section-2,
     .reiki-sessions-section-2,
@@ -1060,20 +1048,27 @@ h3 strong {
     }
 
     .coaching-sessions-text {
-        padding-top: 4rem;
         font-size: 2rem;
     }
 
     .coaching-packages-text,
     .integrative-healing-text {
-        padding-top: 5rem;
+        padding-top: 1.5rem;
         font-size: 2rem;
     }
 
     .reiki-sessions-text {
-        padding-top: 8rem;
+        padding-top: 4rem;
         font-size: 2rem;
     }
+
+    .coaching-packages-text .title-p,
+    .integrative-healing-text .title-p,
+    .reiki-sessions-text .title-p,
+    .coaching-sessions-text .title-p {
+        font-size: 2.5rem;
+        color: #545454;
+    } 
 
     .services-main-nav .services-nav li a {
         padding: 1rem;
@@ -1097,7 +1092,7 @@ h3 strong {
 
     .quote {
         line-height: 4rem;
-        width: 75%;
+        width: 85%;
         padding-left: 2rem;
     }
 
@@ -1211,12 +1206,12 @@ h3 strong {
     .reiki-sessions-section-1,
     .coaching-packages-section-1,
     .integrative-healing-packages-section-1 {
-        display: block;
         padding-left: 8rem;
     }
 
-    .title-p {
+    .title-p > strong{
         font-size: 2rem;
+        color: #545454;
     }
 
     .discovery-section-text {
@@ -1235,7 +1230,7 @@ h3 strong {
 
     .quote {
         line-height: 4rem;
-        width: 50%;
+        width: 65%;
         padding-left: 2rem;
     }
 
@@ -1255,6 +1250,27 @@ h3 strong {
     }
     
 }
+
+@media only screen and (min-width: 1350px){
+    .quote {
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 1550px){
+    .quote {
+        width: 50%;
+    }
+}
+
+
+@media only screen and (min-width: 1650px){
+    .quote {
+        width: 45%;
+    }
+}
+
+
 
 
 
