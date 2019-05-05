@@ -869,6 +869,12 @@ h3 strong {
         display: flex;
     }
 
+    .about-me-header h3 {
+        padding-top: 2rem;
+        margin-left: 1.25rem;
+        font-size: 3.5rem;
+    }
+
     .about-me-image img{
         max-width: 40vh;
         margin-top: 0.5rem;
