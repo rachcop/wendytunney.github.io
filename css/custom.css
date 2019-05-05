@@ -1217,6 +1217,11 @@ h3 strong {
         margin-bottom: 2rem;
     }
 
+    .contact-button {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
     
 }
 
